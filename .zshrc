@@ -1,7 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
-# Path to your Oh My Zsh installation.
+If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATHPath to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -103,15 +101,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nn='nano'
-alias jp='cd Java-projects'
+alias jp='cd $HOME/Java-projects'
 alias stt='git status'
 alias gd='git diff'
 alias glo='git log'
 alias cn='clear && neofetch'
 idea() {
     if [ -z "$1" ]; then
-        nohup /home/mateus/.idea-IC-252.26830.84/bin/idea "$PWD" >/dev/null 2>&1 &
+        nohup $HOME/.idea/bin/idea "$PWD" >/dev/null 2>&1 &
     else
-        nohup /home/mateus/.idea-IC-252.26830.84/idea "$1" >/dev/null 2>&1 &
+        nohup $HOME/.idea/idea "$1" >/dev/null 2>&1 &
     fi
 }
